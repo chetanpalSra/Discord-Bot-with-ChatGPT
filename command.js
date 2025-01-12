@@ -1,3 +1,4 @@
+require('dotenv').config();
 import { REST, Routes } from 'discord.js';
 
 //This code is used to register slash commands (commands that users can invoke with /) for your Discord bot using the Discord API and Discord.js.
@@ -14,7 +15,7 @@ const commands = [
     }
   ];
 
-const TOKEN = 'MTMyMTU3MTcxMjQ2NjQyMzkwMQ.GLNAmu.wy1mEPwhgIh7ynnGSAaa6fv-4qjzNMNtdunKZU';
+const TOKEN = process.env.AUTH_TOKEN;
 
 const rest = new REST({ version: '10' }).setToken(TOKEN);
 
