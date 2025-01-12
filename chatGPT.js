@@ -1,6 +1,6 @@
 require('dotenv').config();
 
-const chatGPT_API_KEY = process.env.API_KEY;
+const chatGPT_API_KEY = process.env.MY_API_KEY;
 
 async function sendMessageToChatGPT(prompt){
 
